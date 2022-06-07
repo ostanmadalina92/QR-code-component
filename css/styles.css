@@ -31,7 +31,7 @@ main {
 
 /* Article */
 article {
-  max-width: 250px;
+  max-width: 300px;
   /* When placing items in specific positions, prefer using layout */
   /* properties on the parent (e.g. container)  */
   /* margin: 0 auto; */
@@ -47,6 +47,10 @@ article img {
 }
 
 .text {
+  /* Add padding to this element to get */
+  /* as close to the design as possible */
+  /* padding-bottom should be a bigger value */
+  /* than the other sides */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -58,17 +62,25 @@ article img {
 
 .text h2 {
   color: hsl(218, 44%, 22%);
+  /* Given that this is used for creating */
+  /* space between two elements, it should */
+  /* be a margin instead */
   padding-bottom: 10px;
   margin-top: 15px;
+  /* Adjust font-size to get as close */
+  /* as possible to the design */
 }
 
 .text p {
   color: hsl(220, 15%, 55%);
+  /* This can be removed because spacing will be */
+  /* taken care of at a higher level in the DOM */
   margin-bottom: 25px;
+  /* Adjust font-size to get as close */
+  /* as possible to the design */
 }
 
 /* Footer */
-
 footer {
   flex-basis: auto;
   padding-bottom: 1.5rem;
